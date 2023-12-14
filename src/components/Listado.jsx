@@ -10,7 +10,7 @@ const Listado = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        fetch('https://randomuser.me/api/?results=6')
+        fetch('https://randomuser.me/api/?results=9')
             .then((response) => response.json())
             .then((datos) => setCandidatos(datos.results))
     }, [])
@@ -33,13 +33,14 @@ const Listado = () => {
 
     return (
         <>
-            <Link to='/gestion'> <button className='trabajadores'>Trabajadores</button></Link>
+          
             <h1>CANDIDATOS DISPONIBLES</h1>
 
             <div className='presentacion'>
                 {candidatos.map((valor, index) =>
                     <Candidato valor={valor} index={index} onBuscarUno={buscarUno} onGuardarUno={guardarUno} />
                 )}
+                  <Link to='/gestion'> <button className='trabajadores'>Seleccionados</button></Link>
             </div>
             <hr />
             
