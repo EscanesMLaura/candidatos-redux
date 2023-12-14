@@ -11,8 +11,8 @@ const Candidato = ({ valor, index, onBuscarUno, onGuardarUno }) => {
                 <div className='datos'>
                     <div className='nombre'>{valor.name.title}. {valor.name.first} {valor.name.last}</div>
                     <div> Ubicación: {valor.location.city} ({valor.location.country})</div>
-                    <div><a href="#">{valor.email}</a></div>
-                    <div><a href="#">{valor.phone}</a></div>
+                    <div className="enlace-estilo">{valor.email}</div>
+                    <div className="enlace-estilo">{valor.phone}</div>
                 </div>
                 <div className='botones'>
                     <button onClick={() => onBuscarUno(index)} className='rojo'>Ocultar</button>

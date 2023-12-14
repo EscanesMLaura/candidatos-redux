@@ -109,6 +109,11 @@ button:hover {
     margin-top: 12px;
 }
 
+.enlace-estilo {
+    color: blue;
+    text-decoration: underline;
+}
+
 /* Trabajadores*/
 .fotoUsuario {
     border-radius: 180px;
@@ -130,7 +135,7 @@ button:hover {
     color: white;
     margin-top: 7px;
     margin-bottom: 10px;
-    
+
 }
 
 .rojo1:hover {
