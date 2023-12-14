@@ -34,7 +34,7 @@ const Listado = () => {
     return (
         <>
             <Link to='/gestion'> <button className='trabajadores'>Trabajadores</button></Link>
-            <h1>Candidatos disponibles</h1>
+            <h1>CANDIDATOS DISPONIBLES</h1>
 
             <div className='presentacion'>
                 {candidatos.map((valor, index) =>

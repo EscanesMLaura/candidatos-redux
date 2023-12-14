@@ -31,15 +31,19 @@ const Gestion = () => {
     return (
         <>
             <Link to='/candidatos'>
-                <button>Candidatos</button>
+                <button className='trabajadores'>Candidatos</button>
             </Link>
-            <h1>Trabajadores seleccionados</h1>
+            <h1>TRABAJADORES SELECCIONADOS</h1>
 
-            <div className='usuarios'>
-                {listaTrabajadores.map((valor, index) =>
-                    <Trabajador valor={valor} index={index} onActualizar={actualizar} onEliminar={eliminar} />
-                )}
-            </div>
+            {listaTrabajadores.length === 0 ? (
+                <h3>No seleccionó ningún candidato.</h3>
+            ) : (
+                <div className='usuarios'>
+                    {listaTrabajadores.map((valor, index) =>
+                        <Trabajador valor={valor} index={index} onActualizar={actualizar} onEliminar={eliminar} />
+                    )}
+                </div>
+            )}
         </>
     )
 }
