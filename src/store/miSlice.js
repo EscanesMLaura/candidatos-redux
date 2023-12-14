@@ -27,7 +27,11 @@ export const miSlice = createSlice({
 export const departamentosSlice = createSlice({
     name: 'misDepartamentos',
     initialState: {
-        departamentos: ['África (Ventas)', 'América (Organización)', 'América (Comercial)', 'Asia (Supervisión)', 'Asia (Distribuición)', 'Europa (Distribuición)', 'Europa (Marketing)', 'Ocenía (Distribución)']
+        departamentos: ['África (Ventas)', 'África (Organización)', 'África (Comercial)', 'África (Supervisión)',
+                        'América (Organización)', 'América (Comercial)', 'América (Ventas)', 'América (Supervisión)',
+                        'Asia (Supervisión)', 'Asia (Distribuición)', 'Asia (Ventas)', 'Asia (Organización)', 'Asia (Comercial)',
+                        'Europa (Distribuición)', 'Europa (Marketing)',  'Europa (Ventas)', 'Europa (Organización)', 'Europa (Comercial)',
+                        'Ocenía (Distribución)', 'Ocenía (Marketing)',  'Ocenía (Ventas)', 'Ocenía (Organización)', 'Ocenía (Comercial)',]
     },
     reducers: {
 

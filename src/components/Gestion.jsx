@@ -30,8 +30,11 @@ const Gestion = () => {
 
     return (
         <>
-            <h1>Trabajadores:</h1>
-            <Link to='/candidatos'> <button>Candidatos</button> </Link>
+            <Link to='/candidatos'>
+                <button>Candidatos</button>
+            </Link>
+            <h1>Trabajadores seleccionados</h1>
+
             <div className='usuarios'>
                 {listaTrabajadores.map((valor, index) =>
                     <Trabajador valor={valor} index={index} onActualizar={actualizar} onEliminar={eliminar} />

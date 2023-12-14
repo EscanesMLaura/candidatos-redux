@@ -18,7 +18,7 @@ const Trabajador = ({ valor, index, onActualizar, onEliminar }) => {
                 <div>{valor.location.city}</div>
                 <div>({valor.location.country})</div>
                 <div>
-                    <select onChange={(event) => onActualizar(event.target.value, index)}>
+                    <select  className='seleccionador' onChange={(event) => onActualizar(event.target.value, index)}>
                         <option>Selecciona:</option>
                         {
                             departamentos.map((esteValor, i) =>
@@ -30,7 +30,7 @@ const Trabajador = ({ valor, index, onActualizar, onEliminar }) => {
                     </select>
                 </div>
                 <div>
-                    <button className='rojo' onClick={() => onEliminar(valor)}>Eliminar</button>
+                    <button className='rojo1' onClick={() => onEliminar(valor)}>Eliminar</button>
                 </div>
             </div>
 
